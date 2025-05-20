@@ -33,6 +33,7 @@ jobs:
         tag: nightly
         force_push_tag: true
         message: "Pre-release nightly"
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Publish
       uses: softprops/action-gh-release@v2
