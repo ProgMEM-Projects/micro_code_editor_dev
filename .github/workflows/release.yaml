@@ -1,9 +1,9 @@
 name: Release builds
 on:
   workflow_dispatch: # Allows manual trigger
-  # push:
-  #   tags:
-  #     - 'v*.*.*' # automatically react on semantic versioned tags
+  push:
+    tags:
+      - 'v*.*.*' # automatically react on semantic versioned tags
 jobs:
   release:
     strategy:
